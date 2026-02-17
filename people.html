@@ -3,42 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FED Lab | People</title>
+    <title>FED Group | People</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="./index.html">FED Lab</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="logo-link" href="./index.html" aria-label="Go to homepage">
+          <img
+            class="logo-mark"
+            src="./assets/logo1.png"
+            alt="FED group symbol"
+          />
+        </a>
         <nav class="nav">
           <a class="active" href="./people.html">People</a>
           <a href="./publications.html">Publications</a>
           <a href="./contact.html">Contact</a>
         </nav>
-      </div>
-    </header>
+      </header>
 
-    <main class="section">
-      <div class="container">
-        <h1 class="section-title">People</h1>
-        <h2>M.S. Students</h2>
-        <div class="cards" style="margin-bottom: 1.2rem">
-          <article class="card"><h3>Maddie Cr</h3><p>M.S. Student</p></article>
-          <article class="card"><h3>김성호</h3><p>M.S. Student</p></article>
-          <article class="card"><h3>최재희</h3><p>M.S. Student</p></article>
-        </div>
-        <h2>Undergraduate Interns</h2>
-        <div class="cards">
-          <article class="card">
+      <main class="section page-content tab-gap">
+        <div class="people-grid">
+          <article class="member-card">
+            <div class="member-photo empty"></div>
+            <h3>Sunok Lee</h3>
+            <p>Assistant Professor</p>
+          </article>
+          <article class="member-card">
+            <div class="member-photo empty"></div>
+            <h3>Maddie Cr</h3>
+            <p>M.S. Student</p>
+          </article>
+          <article class="member-card">
+            <div class="member-photo empty"></div>
+            <h3>김성호</h3>
+            <p>M.S. Student</p>
+          </article>
+          <article class="member-card">
+            <div class="member-photo empty"></div>
+            <h3>최재희</h3>
+            <p>M.S. Student</p>
+          </article>
+          <article class="member-card">
+            <div class="member-photo empty"></div>
             <h3>장나경</h3>
             <p>Undergraduate Intern</p>
           </article>
-          <article class="card">
+          <article class="member-card">
+            <div class="member-photo empty"></div>
             <h3>노하은</h3>
             <p>Undergraduate Intern</p>
           </article>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
