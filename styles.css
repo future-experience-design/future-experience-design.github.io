@@ -89,7 +89,7 @@ a {
 .home-main {
   min-height: 600px;
   flex: 1;
-  padding-bottom: 78px;
+  padding-bottom: 56px;
 }
 
 .contact-main {
@@ -125,6 +125,172 @@ a {
   font-size: 16px;
   color: var(--muted);
   line-height: 1.45;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 54px minmax(0, 1fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.home-wordmark-block {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.home-copy-block p {
+  margin-top: 0;
+  max-width: 540px;
+  text-align: justify;
+}
+
+.home-divider {
+  position: relative;
+  width: 54px;
+  height: 18px;
+  margin-top: 20px;
+}
+
+.home-divider::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: var(--ink);
+}
+
+.home-divider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 4px 9px, var(--ink) 0 3px, transparent 3.2px),
+    radial-gradient(circle at calc(100% - 4px) 9px, var(--ink) 0 3px, transparent 3.2px);
+}
+
+.home-question-section {
+  margin-top: 62px;
+}
+
+.home-question {
+  margin: 0 0 32px;
+  max-width: 330px;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.venn-graphic {
+  position: relative;
+  width: 250px;
+  height: 166px;
+}
+
+.venn-circle {
+  position: absolute;
+  top: 0;
+  width: 146px;
+  height: 146px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.venn-left {
+  left: 0;
+}
+
+.venn-right {
+  right: 0;
+}
+
+.venn-center {
+  top: 46px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.venn-center img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.venn-top {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.venn-main {
+  font-size: 46px;
+  line-height: 1;
+}
+
+.home-answer-title {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.home-answer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 600px;
+}
+
+.home-answer-item h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.home-answer-item h3 img {
+  width: 14px;
+  height: 14px;
+  margin-top: 4px;
+  object-fit: contain;
+}
+
+.home-answer-item p {
+  margin: 0 0 0 24px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.home-footer {
+  border-top: 1px solid #ececec;
+  padding-top: 22px;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.home-footer .footer-icons {
+  width: 96px;
+}
+
+.home-footer .footer-text {
+  max-width: 560px;
 }
 
 .site-footer {
@@ -259,6 +425,93 @@ a {
   margin: 6px 0 3px;
   font-size: 16px;
   font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .home-main {
+    padding-bottom: 40px;
+  }
+
+  .hero {
+    padding-top: 72px;
+    gap: 24px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .home-wordmark-block {
+    min-height: 0;
+  }
+
+  .home-divider {
+    display: none;
+  }
+
+  .home-question-section {
+    margin-top: 44px;
+  }
+
+  .home-copy-block p,
+  .home-answer-list,
+  .home-question {
+    max-width: none;
+  }
+
+  .venn-graphic {
+    width: 232px;
+    height: 154px;
+  }
+
+  .venn-circle {
+    width: 136px;
+    height: 136px;
+  }
+
+  .home-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 680px) {
+  .page-shell {
+    padding: 18px 16px 14px;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .nav {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hero {
+    padding-top: 48px;
+  }
+
+  .hero-wordmark {
+    width: min(100%, 300px);
+  }
+
+  .home-question-section {
+    margin-top: 36px;
+  }
+
+  .home-footer .footer-icons {
+    width: 84px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
 }
 
 .member-card p {
