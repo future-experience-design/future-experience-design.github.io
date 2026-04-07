@@ -130,9 +130,9 @@ a {
 .home-hero,
 .home-explore {
   display: grid;
-  grid-template-columns: minmax(280px, 350px) 80px minmax(0, 1fr);
+  grid-template-columns: 356px 92px minmax(0, 552px);
   align-items: start;
-  column-gap: 36px;
+  column-gap: 28px;
 }
 
 .home-hero {
@@ -140,7 +140,7 @@ a {
 }
 
 .home-hero-wordmark {
-  padding-top: 6px;
+  padding-top: 0;
 }
 
 .home-wordmark-image {
@@ -151,7 +151,7 @@ a {
 
 .home-hero-line,
 .home-explore-line {
-  padding-top: 28px;
+  padding-top: 6px;
 }
 
 .home-hero-line img,
@@ -163,15 +163,15 @@ a {
 
 .home-hero-copy p {
   margin: 0;
-  max-width: 548px;
+  max-width: 552px;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.45;
-  text-align: left;
+  text-align: justify;
 }
 
 .home-explore {
-  margin-top: 66px;
+  margin-top: 72px;
 }
 
 .home-explore-question h2,
@@ -195,7 +195,8 @@ a {
 }
 
 .home-explore-copy {
-  max-width: 590px;
+  max-width: 552px;
+  padding-top: 2px;
 }
 
 .home-explore-item {
@@ -225,6 +226,7 @@ a {
   color: var(--muted);
   font-size: 16px;
   line-height: 1.45;
+  text-align: justify;
 }
 
 .home-explore-item-goal h3 {
@@ -562,6 +564,11 @@ a {
   .home-explore-copy,
   .home-explore-question h2 {
     max-width: none;
+  }
+
+  .home-hero-copy p,
+  .home-explore-item p {
+    text-align: left;
   }
 
   .home-diagram-image {
