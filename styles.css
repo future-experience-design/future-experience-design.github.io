@@ -391,6 +391,22 @@ a {
   font-weight: 700;
 }
 
+.member-card h3 a {
+  text-decoration: none;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 140ms ease, opacity 140ms ease;
+}
+
+.member-card h3 a:hover,
+.member-card h3 a:focus-visible {
+  text-decoration: underline;
+}
+
+.member-card h3 a:focus-visible {
+  outline: none;
+  opacity: 0.8;
+}
+
 @media (max-width: 680px) {
   .page-shell {
     --shell-pad-top: 18px;
