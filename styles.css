@@ -179,7 +179,7 @@ a {
 }
 
 .home-explore {
-  margin-top: 0;
+  margin-top: var(--home-edge-gap);
 }
 
 .home-explore-question h2,
@@ -674,7 +674,7 @@ a {
   }
 
   .home-explore {
-    margin-top: 0;
+    margin-top: var(--home-edge-gap);
   }
 
   .home-diagram-image {
